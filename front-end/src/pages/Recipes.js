@@ -1,9 +1,4 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
 import Recipe from './Recipe';
-
-//no longer adds ingredients
-//doesn't display new recipes
 
 function Recipes(props) {
     

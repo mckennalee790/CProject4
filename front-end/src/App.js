@@ -38,7 +38,7 @@ function App() {
 
   // render results
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/CProject4/front-end/build/">
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route index element={<Home recipes={recipes} name={name} setName={setName} 
@@ -46,12 +46,12 @@ function App() {
                                       ingredientName={ingredientName} setIngredientN={setIngredientN}
                                       ingredientQ={ingredientQ} setIngredientQ={setIngredientQ}
                                       setUpdate={setUpdate}/>} />
-          <Route path="/recipes" element={<Recipes name={name} setError={setError} recipes={recipes} setRecipes={setRecipes}
+          <Route path="recipes" element={<Recipes name={name} setError={setError} recipes={recipes} setRecipes={setRecipes}
                                           ingredientName={ingredientName} setIngredientN={setIngredientN} 
                                           ingredientQ={ingredientQ} setIngredientQ={setIngredientQ}
                                           shoppingList={shoppingList} setSL={setSL}
                                           update={update} setUpdate={setUpdate}/>} />
-          <Route path="/shopping" element={<ShoppingList name={name} setError={setError} recipes={recipes} setRecipes={setRecipes}
+          <Route path="shopping" element={<ShoppingList name={name} setError={setError} recipes={recipes} setRecipes={setRecipes}
                                           ingredientName={ingredientName} setIngredientN={setIngredientN} 
                                           ingredientQ={ingredientQ} setIngredientQ={setIngredientQ}
                                           shoppingList={shoppingList} setSL={setSL}

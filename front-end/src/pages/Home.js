@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import meal1 from './images/meal1.jfif'
 import meal2 from './images/meal2.jfif'
 import meal3 from './images/meal3.jpg'
-import meal4 from './images/meal4.jpg'
 import meal5 from './images/meal5.jfif'
 import "./styles.css";
 
@@ -48,16 +47,13 @@ function Home(props) {
     props.setName("");
   }
   
-    //let currentRecipe = props.recipes.find(recipe => props.name == props.recipes.name);
-    //console.log(currentRecipe);
-  
     return (
     <div>
       <h1 className="bigHeading">Meal Management</h1>
       <div className="home">
         <div className="images">
-            <img classname="image" src={meal1} width="350" />
-            <img classname="image" src={meal2} width="350" />
+            <img classname="image" src={meal1} width="350" alt=""/>
+            <img classname="image" src={meal2} width="350" alt=""/>
           </div>
         <div className="inputs">
               <div className="enterName">
@@ -86,8 +82,8 @@ function Home(props) {
               </div>
           </div>
           <div className="images">
-            <img classname="image" src={meal5} width="350" />
-            <img classname="image" src={meal3} width="350" />
+            <img classname="image" src={meal5} width="350" alt=""/>
+            <img classname="image" src={meal3} width="350" alt=""/>
           </div>
       </div>
       <footer className="footer"><a href="https://github.com/mckennalee790/CProject4">GitHub Link</a></footer>

@@ -1,6 +1,3 @@
-import axios from 'axios';
-import { useState, useEffect } from 'react';
-
 function Ingredient(props) {
     
     return (

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Ingredient from './Ingredient';
 
 function Recipe(props) {
@@ -8,7 +8,7 @@ function Recipe(props) {
   
   const deleteRecipe = async(id)=> {
     try {
-      const response = await axios.delete("/api/recipes/" + id);
+      await axios.delete("/api/recipes/" + id);
       props.setUpdate(true);
     }
     catch(error) {
