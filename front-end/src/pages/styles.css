@@ -106,7 +106,6 @@ button {
 .recipeName {
     font-size: 20px;
     font-weight: bold;
-    /*color: white;*/
 }
 
 .btn1, .btn2, .btn3 {
@@ -164,4 +163,67 @@ button {
 .footer {
     background-color: #fcf6db;
     height: 30px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .home {
+    flex-direction: column;
+  }
+  
+  .images {
+    flex-direction: row;
+  }
+  
+  .bigHeading {
+    font-size: 50px;
+  }
+  
+  img {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .allRecipes {
+    grid-template-columns: 1fr;
+  }
+  
+  .shopList {
+    width: 400px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+    
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .home {
+    flex-direction: column;
+  }
+  
+  .images {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .bigHeading {
+    font-size: 60px;
+  }
+  
+  img {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .allRecipes {
+    grid-template-columns: 1fr;
+  }
+  
+  .shopList {
+    width: 400px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
 }
