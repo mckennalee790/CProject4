@@ -1,0 +1,166 @@
+/*#5C6E58*/
+/*#8AA899*/
+/*#F2D349*/
+body {
+    text-align: center;
+}
+
+/*navBar*/
+.bg-light {
+    background-color: #8AA899 !important;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: black;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/*Home Page*/
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.bigHeading {
+    font-size: 80px;
+    margin: 20px;
+    color: #5C6E58;
+}
+
+.inputs, .images {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.inputs {
+    background-color: #8AA899;
+    color: white;
+    padding: 30px 60px;
+}
+
+img {
+    padding: 20px;
+}
+
+.inputs {
+    text-align: center;
+}
+
+.enterI, .enterName {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+.inputSection {
+    margin: 10px;
+    background-color: #8AA899;
+    text-align: center;
+}
+
+.input {
+    margin: 10px;
+    text-align: left
+}
+
+button {
+    padding: 5px;
+    background-color: white;
+    border: 2px solid white;
+}
+
+/*Recipe page*/
+.midHeading {
+    font-size: 50px;
+    margin: 20px;
+    color: #5C6E58;
+}
+
+.allRecipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.oneRecipe {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    background-color: #8AA899;
+}
+
+.recipeName {
+    font-size: 20px;
+    font-weight: bold;
+    /*color: white;*/
+}
+
+.btn1, .btn2, .btn3 {
+    width: 200px;  
+    height: 40px;
+    border: 0px solid black;
+}
+.btn1 {
+    background-color: #f3d75b;
+}
+.btn2 {
+    background-color: #a1b9ad;
+}
+.btn3 {
+    background-color: #5C6E58;
+}
+.btn1:hover {
+    background-color: #f9e9a5;
+}
+.btn2:hover {
+    background-color: #cedad4;
+}
+.btn3:hover {
+    background-color: #778e72;
+}
+
+/*shopping list*/
+.shopPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopList {
+    border: 2px solid black;
+    width: 600px;
+    padding: 30px 40px;
+    text-align: left;
+    background-color: #fcf6db;
+    margin: 10px;
+}
+
+.ingredients {
+    font-size: 20px;
+}
+
+.clearBtn {
+    height: 80px;
+    width: 200px;
+    background-color: #5C6E58;
+    color: white;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #fcf6db;
+}
