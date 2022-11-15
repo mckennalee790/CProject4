@@ -90,7 +90,7 @@ function Home(props) {
             <img classname="image" src={meal3} width="350" />
           </div>
       </div>
-      <footer className="footer"><a href="">GitHub Link</a></footer>
+      <footer className="footer"><a href="https://github.com/mckennalee790/CProject4">GitHub Link</a></footer>
     </div>
     );
 }
